@@ -28,7 +28,9 @@ Avg. PSNR: 28.5425 dB   Bilinear 27.1091 dB
 ========================
 ```
 
-Since the boundary contextualized model requires lots of manual efforts and the training process is too complex to provide one-step script. Thus, we provide a model trained with VOC2012 and boundary map in `./checkpoints/main_spnetmodel_pre_trained.pth`. You can run script `sh eval_pre_trained.sh` to re-produce our results with output as: 
+Since the boundary contextualized model requires lots of manual efforts and the training process is too complex to provide one-step script. Thus, we provide a model trained with VOC2012 and boundary map in `./checkpoints/main_spnetmodel_pre_trained.pth`. We are glad to share training skills and you can send the mail to `shiyk3ATmail2.sysu.edu.cn` for discussion. 
+
+You can run script `sh eval_pre_trained.sh` to re-produce our results with output as: 
 ```
 =========SPNet==========
 The testing time is 0.814436 second
