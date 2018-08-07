@@ -15,7 +15,7 @@ We put Set14 at `./Train`, you should download [General-100](http://mmlab.ie.cuh
 # Evaluation
 In this implemention, we evaluate SPNet on Set14. In addition, we also provide a baseline model(e.g. FSRCNN) for better comparison. Both of us were trained on General-100 with 1000 epoches. The training code are `main_spnet.py` and `main_cnn_baseline.py`, respectively.
 
-The proposed model achieve well balance beween efficiency and performance. Runing the evaluation script with `sh eval.sh`, with the output as:
+The proposed model achieves well balance beween efficiency and performance. Runing the evaluation script with `sh eval.sh`, with the output as:
 ```
 =========SPNet==========
 The testing time is 0.837336 second
