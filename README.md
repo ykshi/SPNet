@@ -1,6 +1,7 @@
 # SPNet
 
-This is implementation of TMM17 paper, XXXXXX. In this work, we proposed a efficient and structure-preserving image super-resolution framework by incorporating light-weight architecture and contextualized learning. 
+This is implementation of T-MM17 paper Structure-Preserving Image Super-Resolution
+via Contextualized Multitask Learning. In this work, we proposed a efficient and structure-preserving image super-resolution framework by incorporating light-weight architecture and contextualized learning. 
 
 # Prerequisites
 - Computer with Linux
@@ -56,4 +57,4 @@ If SPNet helps in your research, you can cite our paper:
 Also, if you have any question, please feel free to contact me by sending mail to `shiyk3ATmail2.sysu.edu.cn`.
 
 # Acknowledgement 
-This code is heavily rely on [pytorch examples](https://github.com/pytorch/examples), thanks for their great work
+This code is heavily rely on [pytorch examples](https://github.com/pytorch/examples), thanks for their great work.
