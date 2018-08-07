@@ -75,12 +75,10 @@ else:
     model = torch.load('./checkpoints/'+ opt.name + 'model_epoch_{}.pth'.format(opt.checkpoints))
 
 criterion = nn.MSELoss()
-l1criterion = nn.MSELoss()
 clip_value = 1e-2
 if cuda:
     model = model.cuda()
     criterion = criterion.cuda()
-    l1criterion =l1criterion.cuda()
 
 print('Parameters:')
 param = count_parameters(model)
@@ -106,7 +104,7 @@ def train(epoch):
         optimizer.zero_grad()
         pred = model(input, tag)
         
-        loss = l1criterion(pred, target_new)
+        loss = criterion(pred, target_new)
         epoch_loss += loss.data[0]
         loss.backward()
         optimizer.step()
