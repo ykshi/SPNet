@@ -1,11 +1,15 @@
 clear; close all;
 %% settings
 folder = './Train/Set14/';%
-out_dir = './Train/';
+out_dir = './Train/Patch/test/';
 size_input = 8;% There are 4 pixels padding. Paper presents 7
 size_label = 56;% (11-4) *3 - (3-1)
 scale = 4;
 stride = 56;
+if exist(out_dir, 'dir')
+    rmdir(out_dir, 's');
+end
+mkdir(out_dir);
 
 %% initialization
 data = zeros(size_input, size_input, 1, 1);
@@ -38,7 +42,7 @@ for i = 1 : length(filepaths)
             subim_label = im_label(x : size_label + x - 1, y : size_label + y - 1,:);
             subim_input = imresize(subim_label, 1/scale, 'bicubic');
             count = count + 1;
-            imwrite(subim_label, [out_dir 'Patch/test/' num2str(count) '.png']);
+            imwrite(subim_label, [out_dir num2str(count) '.png']);
         end
     end
 end
