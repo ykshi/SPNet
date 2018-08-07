@@ -1,6 +1,6 @@
 # SPNet
 
-This is implementation of T-MM17 paper Structure-Preserving Image Super-Resolution
+This is pytorch implementation of T-MM17 paper Structure-Preserving Image Super-Resolution
 via Contextualized Multitask Learning. In this work, we proposed a efficient and structure-preserving image super-resolution framework by incorporating light-weight architecture and contextualized learning. 
 
 # Prerequisites
