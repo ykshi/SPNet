@@ -9,7 +9,7 @@ This is implementation of TMM17 paper, XXXXXX. In this work, we proposed a effic
 
 # Data Generation
 
-We put the General-100 and Set14 at `./Train`. First, we should run scripts `generate_train.m` and `generate_test.m` to generate sub-images.
+We put Set14 at `./Train`, you should download [General-100](http://mmlab.ie.cuhk.edu.hk/projects/FSRCNN.html) and put it at `./Train` as well. First, we should run scripts `generate_train.m` and `generate_test.m` to generate sub-images.
 
 # Evaluation
 In this implemention, we evaluate SPNet on Set14. In addition, we also provide a baseline model(e.g. FSRCNN) for better comparison. Both of us were trained on General-100 with 1000 epoches. The training code are `main_spnet.py` and `main_cnn_baseline.py`, respectively.
